@@ -4,16 +4,16 @@ namespace Database\Factories;
 
 use App\Enums\GameTitle;
 use App\Models\Auth\User;
-use App\Models\MatchmakingSignal;
+use App\Models\QueueSlot;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
 /**
- * @extends Factory<\App\Models\MatchmakingSignal>
+ * @extends Factory<\App\Models\QueueSlot>
  */
-class MatchmakingSignalFactory extends Factory
+class QueueSlotFactory extends Factory
 {
-    protected $model = MatchmakingSignal::class;
+    protected $model = QueueSlot::class;
 
     public function definition(): array
     {
@@ -23,7 +23,8 @@ class MatchmakingSignalFactory extends Factory
         return [
             'ulid' => (string) Str::ulid(),
             'user_id' => User::factory(),
-            'game_preference' => $gameTitle->value,
+            'title_slug' => $gameTitle->value,
+            'mode_id' => 1, // Default mode ID
             'skill_rating' => $this->faker->numberBetween(1, 5000),
             'status' => 'active',
             'preferences' => [

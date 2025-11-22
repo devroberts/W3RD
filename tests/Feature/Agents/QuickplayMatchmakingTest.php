@@ -23,7 +23,7 @@ beforeEach(function () {
 });
 
 describe('Agent Matchmaking', function () {
-    it('matches human player with agent after timeout in quickplay', function () {
+    it('matches human player with agent after timeout in queue', function () {
         // Create an available agent
         $agent = Agent::factory()->forGame('checkers')->alwaysAvailable()->create();
         $agentUser = User::factory()->create(['agent_id' => $agent->id]);
@@ -31,12 +31,12 @@ describe('Agent Matchmaking', function () {
         // Create a human player
         $humanUser = User::factory()->create();
 
-        // Simulate Quickplay request for checkers
-        // This would typically be an API call: POST /api/quickplay
+        // Simulate queue request for checkers
+        // This would typically be an API call: POST /api/v1/floor/queue
         // For this test, we're testing the underlying service logic
 
-        // The actual Quickplay service integration will be tested once
-        // we integrate with the existing Quickplay system
+        // The actual queue service integration will be tested once
+        // we integrate with the existing matchmaking system
 
         expect($agentUser->isAgent())->toBeTrue()
             ->and($humanUser->isAgent())->toBeFalse();
