@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acb757ba7b3860b8b0d8808c6dcc957d",
+    "content-hash": "ce2b5437711bd40155ef0d375939ef6d",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -1470,7 +1470,7 @@
             "authors": [
                 {
                     "name": "Drew Roberts",
-                    "email": "github@drewroberts.com",
+                    "email": "dev@drewroberts.com",
                     "homepage": "https://drewroberts.com",
                     "role": "Developer"
                 }
@@ -7689,7 +7689,7 @@
             "authors": [
                 {
                     "name": "Drew Roberts",
-                    "email": "github@drewroberts.com",
+                    "email": "dev@drewroberts.com",
                     "role": "Developer"
                 }
             ],
@@ -7777,7 +7777,7 @@
             "authors": [
                 {
                     "name": "Drew Roberts",
-                    "email": "github@drewroberts.com",
+                    "email": "dev@drewroberts.com",
                     "role": "Developer"
                 }
             ],

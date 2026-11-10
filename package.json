@@ -2,6 +2,7 @@
   "$schema": "https://www.schemastore.org/package.json",
   "private": true,
   "type": "module",
+  "author": "Drew Roberts <dev@drewroberts.com>",
   "scripts": {
     "build": "node init && vite build",
     "dev": "node init && vite"

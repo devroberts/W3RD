@@ -1,13 +1,19 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/livewire-starter-kit",
+    "name": "roberts/w3rd",
     "type": "project",
-    "description": "The official Laravel starter kit for Livewire.",
+    "description": "Laravel API backend for the W3RD gaming protocol.",
     "keywords": [
         "laravel",
         "framework"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Drew Roberts",
+            "email": "dev@drewroberts.com"
+        }
+    ],
     "require": {
         "php": "^8.4",
         "drewroberts/media": "^12.1",
